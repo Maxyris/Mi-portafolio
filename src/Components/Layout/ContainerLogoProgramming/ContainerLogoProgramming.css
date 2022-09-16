@@ -1,0 +1,18 @@
+.LogoProgramming{
+    width: 60px;
+    height: 60px;
+}
+.contLogos{
+    display: flex;
+    justify-content: center;
+}
+.LogosLearn{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.textH3Learn{
+    display: flex;
+    justify-content: center;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
-import fotoBryan from './../../../Images/BRYAN.jpg';
-import './MyImage.css'
 
 
-export const MyImage = ({classNameImage}) => {
+
+export const MyImage = ({imageSRC,classNameImage,alt}) => {
   return (
-    <img src={fotoBryan} alt="" className="classNameImage" />
+    // <img src={fotoBryan} alt="" className="classNameImage" />
+    <img src={imageSRC} alt={alt} className={classNameImage} />
   )
 }
