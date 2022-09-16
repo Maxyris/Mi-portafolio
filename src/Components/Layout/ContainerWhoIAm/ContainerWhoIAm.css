@@ -1,0 +1,14 @@
+.containerWhoiAm{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.containerTextWhoIam{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+}
+.textClassName{
+    font-size: 40px;
+}

@@ -1,0 +1,8 @@
+.buttonHeader{
+    background-color: orange;
+    height: 40px;
+    font-size: 15px;
+    width: 80px;
+    border-radius: 20%;
+    font-family: 'Times New Roman', Times, serif;
+}
