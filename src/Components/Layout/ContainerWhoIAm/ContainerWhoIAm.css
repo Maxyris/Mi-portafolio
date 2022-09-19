@@ -1,5 +1,4 @@
 .containerWhoiAm{
-    width: 100vw;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
@@ -11,4 +10,10 @@
 }
 .textClassName{
     font-size: 40px;
+}
+.classNameImage{
+    width: 450px;
+    height: 550px;
+    border: 2px solid orange;
+    border-radius: 10px;
 }
