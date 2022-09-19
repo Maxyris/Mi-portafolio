@@ -17,11 +17,11 @@ export const ContainerLogoProgramming = () => {
         </div>
         <div className="contLogos">
             <div className="LogosLearn">
-                <MyImage imageSRC={Angular} classNameImage="LogoProgramming" alt="Angular"/>
-                <MyImage imageSRC={PHP} classNameImage="LogoProgramming" alt="PHP"/>
-                <MyImage imageSRC={JAVA} classNameImage="LogoProgramming" alt="JAVA"/>
-                <MyImage imageSRC={DOCKER} classNameImage="LogoProgramming" alt="DOCKER"/>
-                <MyImage imageSRC={C} classNameImage="LogoProgramming" alt="C++"/>
+                <MyImage imageSRC={Angular} classNameImage="LogoProgramming" alt="Angular" title="Angular"/>
+                <MyImage imageSRC={PHP} classNameImage="LogoProgramming" alt="PHP" title="PHP"/>
+                <MyImage imageSRC={JAVA} classNameImage="LogoProgramming" alt="JAVA" title="JAVA"/>
+                <MyImage imageSRC={DOCKER} classNameImage="LogoProgramming" alt="DOCKER" title="DOCKER"/>
+                <MyImage imageSRC={C} classNameImage="LogoProgramming" alt="C++" title="C++"/>
             </div>
         </div>
     </div>

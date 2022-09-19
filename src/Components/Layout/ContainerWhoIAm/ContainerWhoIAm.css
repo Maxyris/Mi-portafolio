@@ -6,10 +6,12 @@
 .containerTextWhoIam{
     display: flex;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
+    
 }
 .textClassName{
     font-size: 40px;
+    text-align: justify;
 }
 .classNameImage{
     width: 450px;
