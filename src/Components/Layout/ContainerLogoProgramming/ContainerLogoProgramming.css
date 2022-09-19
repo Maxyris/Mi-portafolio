@@ -1,6 +1,11 @@
 .LogoProgramming{
     width: 60px;
     height: 60px;
+
+}
+.LogoProgramming:hover{
+    cursor: pointer;
+    
 }
 .contLogos{
     display: flex;
