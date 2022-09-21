@@ -4,32 +4,51 @@ import { TextH3 } from '../../UI/TextH3/TextH3'
 import github from './../../../Images/github.svg'
 import discord from './../../../Images/discord.svg'
 import whatsapp from './../../../Images/whatsapp.svg'
-// import close from './../../../Images/close-outline.svg'
-// import { IoClose } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-
-
-
+import { IoClose } from "react-icons/io5"
 import './Footer.css'
 
 
 export const Footer = () => {
+  const AddRemoveClassName = () =>{
+    console.log('Hola mundo');
+    var btnGithubPopup = document.getElementById('btnGithubPopup');
+    var overlay = document.getElementById('overlay');
+    var popup = document.getElementById('popup');
+    var btnClosePopup = document.getElementById('btnClosePopup');
+
+    btnGithubPopup.addEventListener('click',activeClass)
+    btnClosePopup.addEventListener('click',removeClass)
+
+    function activeClass(){
+      overlay.classList.add('active');
+      popup.classList.add('active');
+    }
+    
+    function removeClass(){
+        overlay.classList.remove('active');
+        popup.classList.remove('active');
+    }
+  }
+
   return (
     <div className="containerFooter">
-        <div className='redes'>
-            <TextH3 H3="Mis redes: " />
-            <MyImage imageSRC={github} classNameImage="" alt="Github" title="Github"/>
-            <MyImage imageSRC={discord} classNameImage="" alt="Discord" title="Discord"/>
-            <MyImage imageSRC={whatsapp} classNameImage="" alt="whatsapp" title="whatsapp"/>
+      <div className='redes'>
+          <TextH3 H3="Mis redes: " />
+          <MyImage id="" imageSRC={github} classNameImage="" alt="Github" title="Github"/>
+          <MyImage imageSRC={discord} classNameImage="" alt="Discord" title="Discord"/>
+          <MyImage imageSRC={whatsapp} classNameImage="" alt="whatsapp" title="whatsapp"/>
+          <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}}>pruebax</button>
+      </div>
+      <div className="overlay " id='overlay'>
+        <div className="popup" id='popup'>
+          <a href='/' id="btnClosePopup" className='btnClosePopup'>
+            <i>
+              <IoClose/>
+            </i>
+          </a>
+          <TextH3 H3="Hola mundo"/>
         </div>
-        <div className="overlay active">
-            <div className="popup">
-                {/* <IoClose></IoClose> */}
-                <a href='/' id="btnClosePopup" className='btnClosePopup'><i><IoClose/></i></a>
-                <TextH3 H3="Hola mundo"/>
-            </div>
-        </div>
+      </div>
     </div>
-    
   )
 }
