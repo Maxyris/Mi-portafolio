@@ -10,31 +10,28 @@ import './Footer.css'
 
 export const Footer = () => {
   const AddRemoveClassName = () =>{
-    console.log('Hola mundo');
+
     var btnGithubPopup = document.getElementById('btnGithubPopup');
     var overlay = document.getElementById('overlay');
     var popup = document.getElementById('popup');
     var btnClosePopup = document.getElementById('btnClosePopup');
 
-    btnGithubPopup.addEventListener('click',activeClass)
-    btnClosePopup.addEventListener('click',removeClass)
-
-    function activeClass(){
+    btnGithubPopup.addEventListener('click',function activeClass(){
       overlay.classList.add('active');
       popup.classList.add('active');
-    }
-    
-    function removeClass(){
-        overlay.classList.remove('active');
-        popup.classList.remove('active');
-    }
-  }
+    });
+
+    btnClosePopup.addEventListener('click',function removeClass(){
+      overlay.classList.remove('active');
+      popup.classList.remove('active');
+    });
+}
 
   return (
     <div className="containerFooter">
       <div className='redes'>
           <TextH3 H3="Mis redes: " />
-          <MyImage id="" imageSRC={github} classNameImage="" alt="Github" title="Github"/>
+          <MyImage id="" imageSRC={github} classNameImage="" alt="Github" title="Github" />
           <MyImage imageSRC={discord} classNameImage="" alt="Discord" title="Discord"/>
           <MyImage imageSRC={whatsapp} classNameImage="" alt="whatsapp" title="whatsapp"/>
           <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}}>pruebax</button>
