@@ -1,11 +1,9 @@
 .containerFooter{
-    /* background-color: red; */
-    display: flex;
-    height: 70px;
+    height: 100px;
+    background-color: rgb(22, 17, 17);
 }
 .LogoFooterGithub{
     width: 100px;
-
 }
 .LogoFooterGithub:hover{
     cursor: pointer;
@@ -16,8 +14,26 @@
 .LogoFooterDiscord{
     width: 80px;
 }
-
-
+.ClassImageFooter{
+    width: 50px;
+}
+.btnLogoFooter{
+    border: none;
+    border-radius: 10px;
+}
+.buttonsContainerLogoFooter{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.classNameTextH3Footer{
+    font-family: 'Times New Roman', Times, serif;
+    color: orange;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
 /*POPUP*/
  
 .overlay{
@@ -52,3 +68,5 @@
 .btnClosePopup:hover{
     color: black;
 }
+/* ------------------------ */
+
