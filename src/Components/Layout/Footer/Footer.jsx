@@ -29,12 +29,19 @@ export const Footer = () => {
 
   return (
     <div className="containerFooter">
+      <TextH3 classNameTextH3="classNameTextH3Footer" H3="Mis redes: " />
       <div className='redes'>
-          <TextH3 H3="Mis redes: " />
-          <MyImage id="" imageSRC={github} classNameImage="" alt="Github" title="Github" />
-          <MyImage imageSRC={discord} classNameImage="" alt="Discord" title="Discord"/>
-          <MyImage imageSRC={whatsapp} classNameImage="" alt="whatsapp" title="whatsapp"/>
-          <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}}>pruebax</button>
+          <div className="buttonsContainerLogoFooter">
+            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
+              <MyImage id="" imageSRC={github} classNameImage="ClassImageFooter" alt="Github" title="Github" />
+            </button>
+            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
+              <MyImage imageSRC={discord} classNameImage="ClassImageFooter" alt="Discord" title="Discord"/>
+            </button>
+            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
+              <MyImage imageSRC={whatsapp} classNameImage="ClassImageFooter" alt="whatsapp" title="whatsapp"/>
+            </button>
+          </div>
       </div>
       <div className="overlay " id='overlay'>
         <div className="popup" id='popup'>
