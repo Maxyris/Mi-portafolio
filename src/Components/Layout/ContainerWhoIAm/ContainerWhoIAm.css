@@ -13,9 +13,47 @@
     font-size: 40px;
     text-align: justify;
 }
-.classNameImage{
+/* .classNameImage{
     width: 450px;
     height: 550px;
     border: 2px solid orange;
     border-radius: 10px;
+} */
+
+
+
+/*-----------------------------------------*/
+.containerImage{
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.containerImage::after{
+    content: '';
+    position: absolute;
+    background-image: url('../../../Images/BRYAN.jpg');
+    border-radius: 16px;
+    inset: 4px;
+}
+.containerImage::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 140vh;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
 }
