@@ -1,8 +1,6 @@
 import React from 'react'
 import './ContainerWhoIAm.css'
 import { Text } from '../../UI/Text/Text'
-import { MyImage } from '../../UI/MyImage/MyImage'
-import fotoBryan from './../../../Images/BRYAN.jpg';
 
 
 
@@ -17,7 +15,6 @@ export const ContainerWhoIAm = () => {
 
       </div>
       <div className="containerImage">
-        <MyImage imageSRC={fotoBryan} classNameImage="classNameImage"/>
       </div>
     </div>
   )

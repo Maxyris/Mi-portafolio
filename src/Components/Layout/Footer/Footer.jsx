@@ -10,7 +10,7 @@ import './Footer.css'
 
 export const Footer = () => {
   const AddRemoveClassName = () =>{
-
+    /*github*/
     var btnGithubPopup = document.getElementById('btnGithubPopup');
     var overlay = document.getElementById('overlay');
     var popup = document.getElementById('popup');
@@ -24,7 +24,7 @@ export const Footer = () => {
     btnClosePopup.addEventListener('click',function removeClass(){
       overlay.classList.remove('active');
       popup.classList.remove('active');
-    });
+    }); 
 }
 
   return (
@@ -32,15 +32,15 @@ export const Footer = () => {
       <TextH3 classNameTextH3="classNameTextH3Footer" H3="Mis redes: " />
       <div className='redes'>
           <div className="buttonsContainerLogoFooter">
+            {/* buttonInfoGithub */}
             <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
-              <MyImage id="" imageSRC={github} classNameImage="ClassImageFooter" alt="Github" title="Github" />
+              <MyImage imageSRC={github} classNameImage="ClassImageFooter" alt="Github" title="Github" />
             </button>
-            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
-              <MyImage imageSRC={discord} classNameImage="ClassImageFooter" alt="Discord" title="Discord"/>
-            </button>
-            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
-              <MyImage imageSRC={whatsapp} classNameImage="ClassImageFooter" alt="whatsapp" title="whatsapp"/>
-            </button>
+            {/* buttonInfoDiscord */}
+
+            
+            <MyImage imageSRC={discord} classNameImage="ClassImageFooter" alt="Discord" title="Discord"/>
+            <MyImage imageSRC={whatsapp} classNameImage="ClassImageFooter" alt="whatsapp" title="whatsapp"/>
           </div>
       </div>
       <div className="overlay " id='overlay'>
@@ -50,7 +50,7 @@ export const Footer = () => {
               <IoClose/>
             </i>
           </a>
-          <TextH3 H3="Hola mundo"/>
+          <TextH3 H3="https://github.com/Maxyris"/>
         </div>
       </div>
     </div>
