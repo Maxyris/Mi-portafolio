@@ -6,9 +6,13 @@ import discord from './../../../Images/discord.svg'
 import whatsapp from './../../../Images/whatsapp.svg'
 import { IoClose } from "react-icons/io5"
 import './Footer.css'
+import Swal from "sweetalert2"
+
+
 
 
 export const Footer = () => {
+  
   const AddRemoveClassName = () =>{
     /*github*/
     var btnGithubPopup = document.getElementById('btnGithubPopup');
@@ -39,8 +43,30 @@ export const Footer = () => {
             {/* buttonInfoDiscord */}
 
             
-            <MyImage imageSRC={discord} classNameImage="ClassImageFooter" alt="Discord" title="Discord"/>
+            <button onClick={()=>{
+              Swal.fire({
+                title: "Arcoiris#5681",
+                text: "Está ventana modal fue realizado con sweetalert2",
+                imageHeight: "100px",
+                imageWidth: "100px",
+                imageUrl: 'https://cdn-icons-png.flaticon.com/512/2111/2111370.png',
+                imageAlt: "Discord",
+              })
+            }}>
+              <MyImage imageSRC={discord} classNameImage="ClassImageFooter" alt="Discord" title="Discord"/>
+            </button>
+            <button onClick={()=>{
+              Swal.fire({
+                title: "3012082826",
+                text: "Está ventana modal fue realizado con sweetalert2",
+                imageHeight: "100px",
+                imageWidth: "100px",
+                imageUrl: 'https://cdn-icons-png.flaticon.com/512/3670/3670051.png',
+                imageAlt: "Whatsapp",
+              })
+            }}>
             <MyImage imageSRC={whatsapp} classNameImage="ClassImageFooter" alt="whatsapp" title="whatsapp"/>
+            </button>
           </div>
       </div>
       <div className="overlay " id='overlay'>
