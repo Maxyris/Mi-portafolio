@@ -1,0 +1,91 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* CSS */
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+.form-mail input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: orange; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+.form-mail textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: orange; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+  resize: none;
+}
+
+
+.form-mail label{
+  display: block; 
+  float: center;  
+}
+
+
+.sendEmailButton{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: orange; 
+  border-color: black; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+.sendEmailButton p{
+  color: #fff; 
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+.form-mail input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+.form-mail textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
