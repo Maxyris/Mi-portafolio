@@ -37,7 +37,16 @@ export const Footer = () => {
       <div className='redes'>
           <div className="buttonsContainerLogoFooter">
             {/* buttonInfoGithub */}
-            <button id='btnGithubPopup' onClick={()=>{AddRemoveClassName()}} className="btnLogoFooter">
+            <button id='btnGithubPopup' onClick={()=>{
+              Swal.fire({
+                title: "https://github.com/Maxyris",
+                text: "¡Este es mi perfil de github donde se encuentran todos los repositorios en los que estoy involucrado!",
+                imageHeight: "100px",
+                imageWidth: "100px",
+                imageUrl: 'https://cdn-icons-png.flaticon.com/512/733/733609.png',
+                imageAlt: "Github",
+              })
+            }} className="btnLogoFooter">
               <MyImage imageSRC={github} classNameImage="ClassImageFooter" alt="Github" title="Github" />
             </button>
             {/* buttonInfoDiscord */}
@@ -46,7 +55,7 @@ export const Footer = () => {
             <button onClick={()=>{
               Swal.fire({
                 title: "Arcoiris#5681",
-                text: "¡Puede contatarse conmigo por medio de Discord!",
+                text: "¡Puede contactarse conmigo por medio de Discord!",
                 imageHeight: "100px",
                 imageWidth: "100px",
                 imageUrl: 'https://cdn-icons-png.flaticon.com/512/2111/2111370.png',
@@ -58,7 +67,7 @@ export const Footer = () => {
             <button onClick={()=>{
               Swal.fire({
                 title: "3012082826",
-                text: "¡Puede contatarse conmigo por medio de whatsapp!",
+                text: "¡Puede contactarse conmigo por medio de whatsapp!",
                 imageHeight: "100px",
                 imageWidth: "100px",
                 imageUrl: 'https://cdn-icons-png.flaticon.com/512/3670/3670051.png',
