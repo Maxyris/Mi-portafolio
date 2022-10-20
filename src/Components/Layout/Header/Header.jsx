@@ -12,7 +12,7 @@ export const Header = () => {
         </div>
         <div className="buttonsHeader">
             <NavLink to='/'><ButtonsHeader text="Inicio"/></NavLink>
-             <ButtonsHeader text="About US"/> {/*falta el navlink de este boton */}
+             {/* <ButtonsHeader text="About US"/> falta el navlink de este boton */}
             <NavLink to='/Contact'><ButtonsHeader text="Contactar"/></NavLink>
         </div>
     </header>
