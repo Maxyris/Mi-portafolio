@@ -32,7 +32,7 @@ export const Footer = () => {
 }
 
   return (
-    <div className="containerFooter">
+      <footer className="containerFooter">
       <TextH3 classNameTextH3="classNameTextH3Footer" H3="Mis redes: " />
       <div className='redes'>
           <div className="buttonsContainerLogoFooter">
@@ -46,7 +46,7 @@ export const Footer = () => {
             <button onClick={()=>{
               Swal.fire({
                 title: "Arcoiris#5681",
-                text: "Está ventana modal fue realizado con sweetalert2",
+                text: "¡Puede contatarse conmigo por medio de Discord!",
                 imageHeight: "100px",
                 imageWidth: "100px",
                 imageUrl: 'https://cdn-icons-png.flaticon.com/512/2111/2111370.png',
@@ -58,7 +58,7 @@ export const Footer = () => {
             <button onClick={()=>{
               Swal.fire({
                 title: "3012082826",
-                text: "Está ventana modal fue realizado con sweetalert2",
+                text: "¡Puede contatarse conmigo por medio de whatsapp!",
                 imageHeight: "100px",
                 imageWidth: "100px",
                 imageUrl: 'https://cdn-icons-png.flaticon.com/512/3670/3670051.png',
@@ -79,6 +79,6 @@ export const Footer = () => {
           <TextH3 H3="https://github.com/Maxyris"/>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
