@@ -11,13 +11,8 @@ import { Contact } from './Components/Page/Contact/Contact';
 
 
 function App() {
-  const alert = () =>{
-    alert("Prueba")
-  }
-  
   return (
-    <div className="App" onClick={alert}>
-      {/* <Main/> */}
+    <div className="App">
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Main/>}/>

@@ -8,9 +8,9 @@ export const ContainerWhoIAm = () => {
   return (
     <div className='containerWhoiAm'>
       <div className="containerTextWhoIam">
-        <Text text="Mi nombre es Bryan Steven Osorio Zuleta, tengo 19 años, soy desarrollador software enfocado en las bases de datos
-        y el front-end, abierto a aprender cada día más. Me gustaría ser parte de tu equipo
-        de programadores para aportar y nutrir mis conocimientos." TextMainClassName="textClassName"/>
+        <Text text="Graduado de bachiller en el año 2020. Seis meses de experiencia laboral siendo 
+        parte de Grupo UMA ZF como analista de bases de datos, me enfoco en el desarrollo Front-end y
+        las bases de datos." TextMainClassName="textClassName"/>
       </div>
       <div className="containerImage">
       </div>
