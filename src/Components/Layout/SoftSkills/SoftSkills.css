@@ -1,0 +1,12 @@
+.ContainerSoftSkills{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    gap: 50px;
+
+}
+.H3SoftSkills{
+    text-align: center;
+    font-size: 35px;
+}
