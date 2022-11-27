@@ -4,7 +4,7 @@ import { TextH3 } from '../../UI/TextH3/TextH3'
 import github from './../../../Images/github.svg'
 import discord from './../../../Images/discord.svg'
 import whatsapp from './../../../Images/whatsapp.svg'
-import { IoClose } from "react-icons/io5"
+// import { IoClose } from "react-icons/io5"
 import './Footer.css'
 import Swal from "sweetalert2"
 
@@ -13,25 +13,30 @@ import Swal from "sweetalert2"
 
 export const Footer = () => {
   
-  const AddRemoveClassName = () =>{
-    /*github*/
-    var btnGithubPopup = document.getElementById('btnGithubPopup');
-    var overlay = document.getElementById('overlay');
-    var popup = document.getElementById('popup');
-    var btnClosePopup = document.getElementById('btnClosePopup');
 
-    btnGithubPopup.addEventListener('click',function activeClass(){
-      overlay.classList.add('active');
-      popup.classList.add('active');
-    });
+/*--------------------------CREA UN POPUP CON JAVASCRIPT--------------------------*/
+//   const AddRemoveClassName = () =>{
+//     /*github*/
+//     var btnGithubPopup = document.getElementById('btnGithubPopup');
+//     var overlay = document.getElementById('overlay');
+//     var popup = document.getElementById('popup');
+//     var btnClosePopup = document.getElementById('btnClosePopup');
 
-    btnClosePopup.addEventListener('click',function removeClass(){
-      overlay.classList.remove('active');
-      popup.classList.remove('active');
-    }); 
-}
+//     btnGithubPopup.addEventListener('click',function activeClass(){
+//       overlay.classList.add('active');
+//       popup.classList.add('active');
+//     });
+
+//     btnClosePopup.addEventListener('click',function removeClass(){
+//       overlay.classList.remove('active');
+//       popup.classList.remove('active');
+//     }); 
+// }
 
   return (
+
+    /*CREA UNA VENTANA EMERGENTE TIPO ALERTA PARA REPRESENTAR LAS REDES SOCIALES*/
+
       <footer className="containerFooter">
       <TextH3 classNameTextH3="classNameTextH3Footer" H3="Mis redes: " />
       <div className='redes'>
@@ -78,7 +83,8 @@ export const Footer = () => {
             </button>
           </div>
       </div>
-      <div className="overlay " id='overlay'>
+      {/* CONTENEDOR DE LOS POPUP DE JAVASCRIPT */}
+      {/* <div className="overlay " id='overlay'>
         <div className="popup" id='popup'>
           <a href='/' id="btnClosePopup" className='btnClosePopup'>
             <i>
@@ -87,7 +93,7 @@ export const Footer = () => {
           </a>
           <TextH3 H3="https://github.com/Maxyris"/>
         </div>
-      </div>
+      </div> */}
     </footer>
   )
 }
